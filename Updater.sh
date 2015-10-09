@@ -62,6 +62,8 @@ if [ -f $hooks_folder/FileBot.py ];then
  FileBot $FB_localversion $FB_githubversion
  cd $temp_folder
  rm FileBot*
+else
+ wget --no-cache https://raw.githubusercontent.com/Gutz-Pilz/pyLoad-stuff/master/FileBot.py > $hooks_folder/FileBot.py
 fi
 
 ##SJ
@@ -72,6 +74,8 @@ if [ -f $hooks_folder/SJ.py ];then
  SJ $SJ_localversion $SJ_githubversion
  cd $temp_folder
  rm SJ.p*
+else
+ wget --no-cache https://raw.githubusercontent.com/Gutz-Pilz/pyLoad-stuff/master/SJ.py > $hooks_folder/SJ.py
 fi
 
 ##HDAreaOrg
@@ -82,4 +86,6 @@ if [ -f $hooks_folder/HDAreaOrg.py ];then
  HDAreaOrg $HDA_localversion $HDA_githubversion
  cd $temp_folder
  rm HDAreaOrg*
+else
+ wget --no-cache https://raw.githubusercontent.com/Gutz-Pilz/pyLoad-stuff/master/HDAreaOrg.py > $hooks_folder/HDAreaOrg.py
 fi
